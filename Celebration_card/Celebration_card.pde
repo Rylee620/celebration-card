@@ -1,6 +1,8 @@
-//Global Variables
+//Global Variables 
+int appWidth, appHeight;
+float xRect, yRect, widthRect, heightRect
 //
-void setup(){
+void setup() {
 //Print & Println
 println("Hello World");
 println("Width:"+width, "\t", "height:"+height);
@@ -9,7 +11,12 @@ println("Display width: "+displayWidth, "\tDisplay Height: "+displayHeight);
 //
 //fullScreen();
 size(600, 400);
-} //End setup
+appwidth = width;
+appHeight = height;
 //
-void draw() {
+//population
+xRect = appWidth*0;
+yRect = appHeight*0;
+widthRect = appWidth-1;
+heightRect = appHeight-1;
 } //End draw
