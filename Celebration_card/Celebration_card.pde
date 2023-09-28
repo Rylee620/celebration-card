@@ -24,11 +24,19 @@ xRectQuit = appWidth*1/4;
 yRectQuit = appHeight*1/4;
 widthRectQuit = appWidth*1/2;
 heightRectQuit = appHeight*1/2;
-} //End draw
 //
-void draw() {
+//DIVs
   rect(xRectBackground, yRectBackground, widthRectBackground, heightRectBackground);
   rect(xRectQuit, yRectQuit, widthRectQuit, heightRectQuit);
+  //rect(); //
+  //rect(); //
+  //rect(); //
+  //rect(); //
+  //rect(); //
+} //End setup
+//
+void draw() {
+  
 } //End draw
 //
 void keyPressed() {
