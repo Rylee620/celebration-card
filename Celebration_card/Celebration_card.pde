@@ -5,7 +5,7 @@ float xRectQuit, yRectQuit, widthRectQuit, heightRectQuit;
 float xRect3, yRect3, widthRect3, heightRect3;
 //String ; //All text variables as name= 
 //PFont ; //All fonts used
-color Red=#FA1919, Yellow=#FFE203; //colour palette & inks
+color Red=#FA1919, Yellow=#FFE203, Black=#030303; 
 int sizeFont, size; //Text Variables
 //
 //
@@ -36,12 +36,12 @@ widthRect3 = appWidth*2/9;
 heightRect3 = appHeight*1/4;
 //
 //DIVs
+  fill(Black);
   rect(xRectBackground, yRectBackground, widthRectBackground, heightRectBackground);
   fill(Red);
   rect(xRectQuit, yRectQuit, widthRectQuit, heightRectQuit);
   fill(Yellow);
   rect(xRect3, yRect3, widthRect3, heightRect3); //
-  //rect(); //
   //rect(); //
   //rect(); //
   //rect(); //
@@ -75,7 +75,7 @@ void mousePressed() {
   //
   //xRectQuit, yRectQuit, widthRectQuit, heightRectQuit
   if ( mouseX>xRectQuit && mouseX<xRectQuit+widthRectQuit && mouseY>yRectQuit && mouseY<yRectQuit+heightRectQuit ) exit();
-  // 
+  //
 } //End mousePressed
 //
 //End MAIN Program
