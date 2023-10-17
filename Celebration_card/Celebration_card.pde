@@ -4,7 +4,7 @@ float xRectBackground, yRectBackground, widthRectBackground, heightRectBackgroun
 float xRectQuit, yRectQuit, widthRectQuit, heightRectQuit;
 //String ; //All text variables as name= 
 //PFont ; //All fonts used
- color ; //colour palette & inks
+ //color ; //colour palette & inks
 int sizeFont, size; //Text Variables
 //
 //
@@ -56,7 +56,7 @@ void draw() {
   //size = [pixelNumberFontSize]; //integar number
   //textFont([fontVariable], size); // states which font to use
   //text ( [textStringName], [four rect() variables copied from DIVs] );
-  
+  //
 } //End draw
 //
 void keyPressed() {
