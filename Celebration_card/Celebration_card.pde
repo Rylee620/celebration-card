@@ -2,9 +2,10 @@
 int appWidth, appHeight;
 float xRectBackground, yRectBackground, widthRectBackground, heightRectBackground;
 float xRectQuit, yRectQuit, widthRectQuit, heightRectQuit;
+float xRect3, yRect3, widthRect3, heightRect3;
 //String ; //All text variables as name= 
 //PFont ; //All fonts used
- //color ; //colour palette & inks
+color Red=#FA1919, Yellow=#FFE203; //colour palette & inks
 int sizeFont, size; //Text Variables
 //
 //
@@ -25,15 +26,21 @@ xRectBackground = appWidth*0;
 yRectBackground = appHeight*0;
 widthRectBackground = appWidth-1;
 heightRectBackground = appHeight-1;
-xRectQuit = appWidth*1/4;
-yRectQuit = appHeight*1/4;
-widthRectQuit = appWidth*1/2;
-heightRectQuit = appHeight*1/2;
+xRectQuit = appWidth*4/5;
+yRectQuit = appHeight*0;
+widthRectQuit = appWidth*3/8;
+heightRectQuit = appHeight*1/5;
+xRect3 = appWidth*0;
+yRect3 = appHeight*4/5;
+widthRect3 = appWidth*2/9;
+heightRect3 = appHeight*1/4;
 //
 //DIVs
   rect(xRectBackground, yRectBackground, widthRectBackground, heightRectBackground);
+  fill(Red);
   rect(xRectQuit, yRectQuit, widthRectQuit, heightRectQuit);
-  //rect(); //
+  fill(Yellow);
+  rect(xRect3, yRect3, widthRect3, heightRect3); //
   //rect(); //
   //rect(); //
   //rect(); //
