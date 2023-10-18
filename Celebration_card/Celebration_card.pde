@@ -5,7 +5,7 @@ float xRectQuit, yRectQuit, widthRectQuit, heightRectQuit;
 float xRect3, yRect3, widthRect3, heightRect3;
 //String ; //All text variables as name= 
 //PFont ; //All fonts used
-color Red=#FA1919, Yellow=#FFE203, Black=#030303; 
+color Red=#FA1919, Yellow=#FFE203, Black=#000000, Cyan=#03F4FF; 
 int sizeFont, size; //Text Variables
 //
 //
@@ -41,7 +41,7 @@ heightRect3 = appHeight*1/4;
   fill(Red);
   rect(xRectQuit, yRectQuit, widthRectQuit, heightRectQuit);
   fill(Yellow);
-  rect(xRect3, yRect3, widthRect3, heightRect3); //
+  rect(xRect3, yRect3, widthRect3, heightRect3); 
   //rect(); //
   //rect(); //
   //rect(); //
@@ -56,6 +56,7 @@ heightRect3 = appHeight*1/4;
 } //End setup
 //
 void draw() {
+  
   //Drawing Text, copied for each line of text
   //fill(cyan); //ink
   textAlign( CENTER, CENTER ); //Align X&Y, see Processing.org / Reference
@@ -75,6 +76,7 @@ void mousePressed() {
   //
   //xRectQuit, yRectQuit, widthRectQuit, heightRectQuit
   if ( mouseX>xRectQuit && mouseX<xRectQuit+widthRectQuit && mouseY>yRectQuit && mouseY<yRectQuit+heightRectQuit ) exit();
+  //if ( mouseX>xRect3 && mouseX<xRect3+widthRect3 && mouseY>yRect3 && mouseY<yRect3+heightRect3 )   ;
   //
 } //End mousePressed
 //
